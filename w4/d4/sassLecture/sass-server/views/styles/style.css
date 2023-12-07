@@ -1,0 +1,41 @@
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+/* The element to apply the animation to */
+
+
+.box, .box--borderRed, .box--borderGreen {
+  font-size: 16px;
+  border: 2px solid black;
+  margin: 10px 10px 1em;
+  /* background-color: red; */
+  animation-name: example;
+  animation-duration: 10s;
+}
+.box--borderGreen {
+  width: 50%;
+  border: 2px solid green;
+}
+.box--borderRed {
+  width: 25%;
+  border: 2px solid rgb(255, 58, 58);
+}
+.box:hover, .box--borderGreen:hover, .box--borderRed:hover {
+  color: white;
+  background-color: black;
+}
+
+.parent {
+  display: flex;
+}
+
+.images {
+  width: 60vw;
+}
+
+
+
+
+/*# sourceMappingURL=style.css.map */

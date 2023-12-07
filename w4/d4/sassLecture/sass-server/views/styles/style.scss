@@ -1,0 +1,33 @@
+@import '_variables';
+
+
+
+$holiday-red: rgb(255, 58, 58);
+
+.box {
+    font-size: $standard-font-size;
+    // font-size: 16px;
+    border: 2px solid black;
+    margin: 10px 10px 1em;
+    &--borderGreen {
+        @extend .box;
+        width: 50%;
+        border: 2px solid green;
+    }
+    &--borderRed {
+        @extend .box;
+        width: 25%;
+        border: 2px solid $holiday-red;
+    }
+    &:hover{
+        color: white;
+        background-color: black;
+    }
+}
+.parent {
+    display: flex;
+}
+.images {
+    width: 60vw;
+}
+

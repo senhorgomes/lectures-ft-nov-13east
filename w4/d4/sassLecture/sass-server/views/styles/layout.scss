@@ -1,0 +1,31 @@
+@mixin mobile-view($border-size) {
+    flex-direction: column;
+    border: $border-size solid black;
+    background-color: antiquewhite;
+}
+
+/* Media query for mobile devices */
+/* 500 max width, 600 min width */
+@media only screen and (max-width: 500px){
+    .box {
+        font-size: 30px;
+        border: none;
+    }
+    .parent {
+        @include mobile-view(2px)
+    }
+    /* .images{
+        width: 200px;
+    } */
+}
+@media only screen and (min-width: 501px) and (max-width: 1000px){
+    .box {
+        font-size: 22px;
+    }
+    .parent {
+        @include mobile-view(20px)
+    }
+    /* .images{
+        width: 400px;
+    } */
+}
